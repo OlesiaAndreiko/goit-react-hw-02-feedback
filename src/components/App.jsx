@@ -1,22 +1,16 @@
+import { Component } from 'react';
+import { Wrapper } from './Wrapper.styled';
+import { Heading } from './Feedback/Heading/Heading';
+import { Feedback } from './Feedback/Feedback';
 
-import { Feedback } from "./Feedback/Feedback";
 
-
-
-export const App = () => {
-  return (
-    <div
-      style={{
-        // height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 20,
-        color: '#010101'
-      }}
-    >
-      
-      <Feedback/>
-    </div>
-  );
-};
+export class App extends Component {
+  render() {
+    return (
+      <Wrapper>
+        <Heading title="Please, leave feedback!" />
+        <Feedback />
+      </Wrapper>
+    );
+  }
+}
