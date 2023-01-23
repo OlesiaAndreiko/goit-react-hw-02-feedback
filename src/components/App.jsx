@@ -5,6 +5,8 @@ import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Statistics } from './Statistics/Statistics';
 import { Section } from './Section/Section.styled';
 
+
+
 export class App extends Component {
   state = {
     good: 0,
