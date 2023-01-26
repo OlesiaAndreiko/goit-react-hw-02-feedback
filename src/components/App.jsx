@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { Component } from 'react';
 import { Container } from './Container/Container.styled';
 import { Heading } from './Heading/Heading';
