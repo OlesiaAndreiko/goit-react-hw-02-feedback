@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Component } from 'react';
 import { Container } from './Container/Container.styled';
 import { Heading } from './Heading/Heading';
@@ -8,6 +9,7 @@ import { Section } from './Section/Section.styled';
 
 
 export class App extends Component {
+  
   state = {
     good: 0,
     neutral: 0,

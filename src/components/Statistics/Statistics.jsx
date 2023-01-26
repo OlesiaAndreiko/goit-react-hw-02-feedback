@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Notification } from '../Notification/Notification';
 import {StatsWrap,  FeedbackList,  FeedbackItem, StatsCount} from './Statistics.styled';
 
@@ -18,4 +19,10 @@ export const Statistics = ({ options, total, positivePercentage }) => {
   ) : (
     <Notification message="There is no feedback" />
   );
+};
+
+Statistics.propTypes = {
+  options: PropTypes.object.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 };
