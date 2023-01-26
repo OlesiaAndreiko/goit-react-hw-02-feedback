@@ -22,12 +22,19 @@ export const Button = styled.button`
   text-shadow: 0px 1px 2px rgb(92 90 90 / 85%);
   margin: 0 auto;
   padding: 5px 10px;
+
   border: 1px solid rgb(128, 122, 122, 80%);
   border-radius: 4px;
   box-shadow: 0px 0px 4px rgb(92 90 90 / 85%);
   cursor: pointer;
 
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.39, 1.03, 0.82, 0.08);
+
   &:active {
-    background-color: rgb(89, 190, 233, 65%);
+    background-color: rgb(101, 217, 244, 65%);      
+  }
+  &:hover, &:active {
+    transform: scale(1.1);
   }
 `;
